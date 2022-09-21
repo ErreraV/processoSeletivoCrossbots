@@ -8,7 +8,7 @@ int eh_perfeito(int n){
             s += i;
         }
     }
-    if(s == i){
+    if(s == n){
         return 1;
     }
     else{

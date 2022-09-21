@@ -7,6 +7,8 @@ int* tira_repeticoes(int* list){
     int i,j,k;
     int repetido;
     aux = (int*)malloc(sizeof(int)*(N+1));
+    /*percorre o vetor testando para cada posição se o valor já esta presente no aux,
+        quando não esta presente o valor é adicionado à proxima posição do vetor*/
     k=0;
     for(i=0;i<N;i++){
         repetido = 0;

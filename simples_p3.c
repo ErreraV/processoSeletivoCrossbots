@@ -10,6 +10,7 @@ int* encontra_primo(int* l){
     aux = (int*)malloc(sizeof(int)*(N+1));
     for(i=0;i<N;i++){
         ehPrimo = 1;
+        //testa se os numeros são primos
         if(l[i]==0 || l[i]==1){
             ehPrimo = 0;
         }
@@ -21,11 +22,13 @@ int* encontra_primo(int* l){
 
             }
         }
+        //se o numero for primo ele é colocado no vetor
         if(ehPrimo){
          aux[nPrimo] = l[i];
          nPrimo++;
         }
     }
+    //a ultima posição do vetor é definida como -1 para evitar acesso indevido de memoria
     aux[nPrimo]=-1;
     return aux;
 }

@@ -4,11 +4,11 @@ float distancia(float* p1, float* p2){
     float x;
     float y;
     float d;
-    x = p1[0] - p2[0];
+    x = p1[0] - p2[0];//distancia em x
 
-    y = p1[1] - p2[1];
+    y = p1[1] - p2[1];//distancia em y
 
-    d = sqrt(x*x+y*y);
+    d = sqrt(x*x+y*y);//distancia
 
     return d;
 }
